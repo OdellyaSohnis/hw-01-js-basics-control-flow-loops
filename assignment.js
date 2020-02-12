@@ -32,6 +32,19 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+// const baseNumber = 2;
+// let n = 0;
+//
+// while ((n*2)<=24) {
+//   console.log(n*2);
+//   n = n+1;
+// }
+//
+for (let n = 0; n*2<=24; n) {
+  console.log(n*2);
+  n++;
+}
+
 // Add your code above this line
 
 console.log('')
@@ -65,6 +78,23 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+// let numbers = [57, 13, 4, 38]
+// const currentLargestNumber(numbers[0]);
+
+
+let numbers = [3, 48, 29, 12, 18]
+let biggestNumber = 0;
+
+for (let i = 0; i < numbers.length; i++){
+  console.log("Iteration: " + i);
+  if (numbers[i] > biggestNumber) {
+    biggestNumber = numbers[i]
+  }
+  console.log("Current Biggest Number:" + biggestNumber);
+
+}
+
+console.log(biggestNumber);
 
 // Add your code above this line
 
@@ -112,6 +142,40 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+let playerAChoice = "scissors"
+let playerBChoice = "paper"
+
+if (playerAChoice === playerBChoice) {
+  console.log("It's a tie!")
+} else {
+  switch(playerAChoice) {
+    case "rock":
+      if (playerBChoice==="paper"){
+        //
+        console.log("playerB wins")
+      } else {
+        console.log("playerA wins")
+      }
+      //
+    break;
+    case "paper":
+      if (playerBChoice==="scissors"){
+        console.log("playerB wins")
+      }else{
+        console.log("playerA wins")
+      }
+    break;
+    case "scissors":
+      if (playerBChoice==="rock"){
+        console.log("playerB wins")
+      } else {
+        console.log("playerA wins");
+      }
+    break;
+  }
+}
+
+
 
 // Add your code above this line
 
